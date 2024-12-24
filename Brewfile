@@ -23,6 +23,8 @@ cask "macgpt"
 cask "android-studio"
 cask "discord"
 cask "docker"
+cask "postman"
+cask "obs"
 
 mas 'Xcode', id: 497799835
 # mas 'Slack', id: 803453959
