@@ -29,4 +29,5 @@ cask "cold-turkey-blocker"
 cask "zoom"
 
 mas 'Xcode', id: 497799835
+mas 'Pixea', id: 1507782672
 # mas 'Slack', id: 803453959
