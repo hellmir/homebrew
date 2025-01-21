@@ -27,6 +27,7 @@ cask "postman"
 cask "obs"
 cask "cold-turkey-blocker"
 cask "zoom"
+cask "ridibooks"
 
 mas 'Xcode', id: 497799835
 mas 'Pixea', id: 1507782672
