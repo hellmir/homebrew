@@ -1,8 +1,5 @@
 cask_args appdir: '/Applications'
 
-tap "homebrew/core"
-tap "homebrew/cask"
-
 brew "git"
 brew "zsh"
 brew "zsh-completions"
@@ -13,17 +10,22 @@ cask "alt-tab"
 cask "iterm2"
 cask "rectangle"
 cask "maccy"
+cask "raycast"
 cask "google-chrome"
 cask "slack"
 cask "notion"
 cask "intellij-idea"
+cask "webstorm"
 cask "sourcetree"
+cask "macgpt"
 cask "android-studio"
 cask "discord"
 cask "docker"
 cask "postman"
 cask "obs"
+cask "cold-turkey-blocker"
 cask "zoom"
+cask "ridibooks"
 
 mas 'Xcode', id: 497799835
 mas 'Pixea', id: 1507782672
