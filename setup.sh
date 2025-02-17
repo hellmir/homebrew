@@ -30,6 +30,8 @@ fi
 echo 'eval "$('"$HOMEBREW_PREFIX"'/bin/brew shellenv)"' >> ~/.zprofile
 eval "$("$HOMEBREW_PREFIX"/bin/brew shellenv)"
 source ~/.zprofile
+sudo chown -R $(whoami):admin /opt/homebrew
+chmod -R 755 /opt/homebrew
 
 # 4. Homebrew 업데이트
 echo "Updating Homebrew..."
