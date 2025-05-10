@@ -26,7 +26,6 @@ cask "obs"
 cask "cold-turkey-blocker"
 cask "zoom"
 cask "ridibooks"
-cask "aldente"
 cask "itsycal"
 cask "iina"
 
