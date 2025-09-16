@@ -29,6 +29,7 @@ cask "ridibooks"
 cask "itsycal"
 cask "iina"
 cask "battery"
+cask "dbeaver-community"
 
 mas 'Xcode', id: 497799835
 mas 'Pixea', id: 1507782672
