@@ -31,6 +31,7 @@ cask "iina"
 cask "battery"
 cask "dbeaver-community"
 cask "showyedge"
+cask "gureumkim"
 
 mas 'Xcode', id: 497799835
 mas 'Pixea', id: 1507782672
