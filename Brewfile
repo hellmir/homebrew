@@ -38,6 +38,5 @@ cask "tabby"
 mas 'Xcode', id: 497799835
 mas 'Pixea', id: 1507782672
 mas '한컴오피스-한글-viewer', id: 416746898
-# mas 'Slack', id: 803453959
 mas 'RunCat', id: 1429033973
 mas 'microsoft-word', id: 462054704
