@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 brew "git"
+brew "gh"
 brew "zsh"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
