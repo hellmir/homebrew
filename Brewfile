@@ -33,6 +33,7 @@ cask "gureumkim"
 cask "linearmouse"
 cask "tabby"
 cask "figma"
+cask "session-manager-plugin"
 
 mas 'Xcode', id: 497799835
 mas 'Pixea', id: 1507782672
