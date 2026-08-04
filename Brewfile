@@ -34,6 +34,7 @@ cask "linearmouse"
 cask "tabby"
 cask "figma"
 cask "session-manager-plugin"
+cask "bluestacks"
 
 mas 'Xcode', id: 497799835
 mas 'Pixea', id: 1507782672
