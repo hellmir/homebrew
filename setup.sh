@@ -1,19 +1,17 @@
 #!/bin/bash
 
-# 1. X-Code 설치
-echo "Checking for Xcode Command Line Tools..."
-if ! xcode-select -p &>/dev/null; then
-    echo "Xcode Command Line Tools are not installed. Installing now..."
-    xcode-select --install
-    echo "Xcode Command Line Tools installation initiated. Please complete the installation manually if prompted."
-else
-    echo "Xcode Command Line Tools are already installed."
-fi
+# 0. sudo 비밀번호 1회 입력 후 스크립트가 끝날 때까지 60초마다 갱신 (기본 타임아웃 5분)
+sudo -v
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# 2. Homebrew 설치
+# 1. Xcode Command Line Tools
+#    CLT가 없으면 2단계의 Homebrew 설치 스크립트가 softwareupdate로 무인 설치한다.
+#    (xcode-select --install 은 GUI 팝업을 띄우므로 호출하지 않는다)
+
+# 2. Homebrew 설치 — NONINTERACTIVE=1: Enter 대기 생략, sudo는 0단계 캐시 사용
 if ! command -v brew &>/dev/null; then
     echo "Installing Homebrew..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
     echo "Homebrew is already installed."
 fi
@@ -54,12 +52,10 @@ fi
 
 brew bundle --file="$BREWFILE_PATH"
 
-# 7. 추가 작업
+# 7. 추가 작업 — oh-my-zsh는 --unattended (chsh·zsh 실행·.zshrc 덮어쓰기 확인 생략)
 echo "Applying additional configurations..."
 
-export RUNZSH=no
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-unset RUNZSH
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 mkdir -p ~/my-projects
 
