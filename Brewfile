@@ -46,3 +46,4 @@ mas '한컴오피스-한글-viewer', id: 416746898
 mas 'RunCat', id: 1429033973
 mas 'microsoft-word', id: 462054704
 mas '알라딘-ebook', id: 1023251042
+mas '투두메이트-for-desktop', id: 1567807901
